@@ -12,18 +12,19 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Container</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Commissions</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>Ryanne Ferriero</h1>
-                <p><span>Tattoo Apprentice</span></p>
+                <p><span>Artist</span></p>
             </div>
         </div>
     </div>
@@ -69,26 +70,83 @@
             </div>
         </div>
     </div>
+
+   <!--------Portfolio Section-------------->
+   <div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">Portfolio</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3>Work 1</h3>
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+                <h3>Work 2</h3>
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+                <h3>Work 3</h3>
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+   </div>
+
     <!------------Services Section-------------->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title"></h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-paintbrush"></i>
-                    <h2>Personal Pieces</h2>
-                    <p>Services Description</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-droplet"></i>
-                    <h2>Tattoo Services</h2>
+                    <h2>Commission Pieces</h2>
                     <p>Services Description</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+
+
+   <!--------Contact Section-------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> email@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 010-223-4567</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/example"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/example"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Ryanne Ferriero Resume.pdf" download="" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jonathan Lima 2023</p>
+    </div>
+   </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -105,6 +163,20 @@
             document.getElementById(tabname).classList.add("active-tab");
         }      
     
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "75px";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
     </script>
 </body>
 </html>
