@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryanne Ferriero Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Ryanne Ferriero</h1>
+                <p><span>Artist</span></p>
+            </div>
+        </div>
+    </div>
+<!--------------About Me Section-------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="about-text">  
+            <h1 class="sub-title">About Me</h1>
+        </div>
+            <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about me picture.png">
+            </div>
+                <div class="about-col-2">
+                        <p>Hello, and welcome to my about me page! My name is Ryanne Ferriero, and I am a young artist with a vast skillset. </p>
+                        <a href="images/Ryanne Ferriero Resume.pdf" download="" class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+    </div>
+</div>
+   <!--------Portfolio Section-------------->
+
+   <div id="portfolio">
+<div class="container">
+    <div class="portfolio-text">
+        <h1>Portfolio</h1>
+    </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jfif">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jfif">
+                <div class="layer">
+                    <h3>Work 2</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jfif">
+                <div class="layer">
+                    <h3>Work 3</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="images/work-2.jfif">
+                    <div class="layer">
+                        <h3>Work 4</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jfif">
+                    <div class="layer">
+                        <h3>Work 5</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jfif">
+                    <div class="layer">
+                        <h3>Work 6</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+   <!--------Contact Section-------------->
+
+   <div id="contact">
+    <div class="container">
+                <div class="contact-text">
+                    <h1>Contact</h1>
+                </div>
+                <div class="hero">
+           <form action="https://formsubmit.co/4bdf52418561c442eaf19b2f5c34dcab" method="POST">
+
+            <!--Honeypot for Captcha Removal-->
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="row">
+            <div class="input-group">
+                <input type="text" name="Name" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="Email" id="email" required>
+                <label for="email">Email Address</label>
+            </div>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" name="Message" required></textarea>
+                <label for="message">Message for Me? Write it here</label>
+            </div>
+            <button type="submit" class="btn btn2">Submit</button>
+           </form>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jonathan Lima 2023</p>
+        </div>
+    <!--------Script Section-------------->
+    <script src="./index.js"></script>
+</html>
