@@ -13,16 +13,3 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }      
 
-
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu(){
-    sidemenu.style.right = "75px";
-}
-
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
-
-
-
